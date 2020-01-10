@@ -675,11 +675,13 @@ goog.ui.emoji.EmojiPicker.prototype.getCssClass = function() {
  * @return {goog.ui.emoji.Emoji} The currently selected emoji from this picker.
  */
 goog.ui.emoji.EmojiPicker.prototype.getSelectedEmoji = function() {
-  return this.urlPrefix_ ? new goog.ui.emoji.Emoji(
-                               this.urlPrefix_ + this.selectedEmoji_.getUrl(),
-                               this.selectedEmoji_.getId()) :
-                           this.selectedEmoji_;
+  return this.urlPrefix_ ?
+      new goog.ui.emoji.Emoji(
+          this.urlPrefix_ + this.selectedEmoji_.getId(),
+          this.selectedEmoji_.getId()) :
+      this.selectedEmoji_;
 };
+
 
 /**
  * Returns the number of emoji groups in this picker.

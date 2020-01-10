@@ -176,7 +176,7 @@ testSuite({
   testRemove() {
     assertFalse(
         '1. Cookie should not contain "testa"', cookies.containsKey('testa'));
-    cookies.set('testa', 'A', {path: '/'});
+    cookies.set('testa', 'A', undefined, '/');
     assertTrue(
         '2. Cookie should contain "testa"', cookies.containsKey('testa'));
     cookies.remove('testa', '/');

@@ -522,8 +522,10 @@ testSuite({
         'Unique IDs of BaseClass and SubClass instances must differ',
         goog.getUid(new BaseClass), goog.getUid(new SubClass));
 
-    assertNotEquals(
-        'Unique IDs of BaseClass.prototype and SubClass.prototype must differ.',
+    assertEquals(
+        'Unique IDs of BaseClass.prototype and SubClass.prototype ' +
+            'should differ, but to keep the implementation simple, we do not ' +
+            'handle this edge case.',
         goog.getUid(BaseClass.prototype), goog.getUid(SubClass.prototype));
   },
 

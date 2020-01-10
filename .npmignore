@@ -6,7 +6,6 @@
 /*.json
 /closure/bin/generate_closure_unit_tests
 /closure/goog/demos/
-/closure/goog/promise/testsuiteadapter.js
 /closure-deps/
 /doc
 /scripts
